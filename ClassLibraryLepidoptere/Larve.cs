@@ -5,16 +5,16 @@ using System.Text;
 
 namespace ClassLibraryLepidoptere
 {
-    public class Chrysalide : StadeDEvolution
+    public class Larve : StadeDEvolution
     {
         public override StadeDEvolution DonneTonProchainEtat()
         {
-            return new Papillon();
+            return new Chenille();
         }
 
         public override bool SeDeplacer()
         {
-            Console.WriteLine("Je suis pendu");
+            Console.WriteLine("elle bouge");
             return false;
         }
     }

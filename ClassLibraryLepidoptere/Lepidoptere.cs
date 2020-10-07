@@ -11,14 +11,21 @@ namespace ClassLibraryLepidoptere
         private StadeDEvolution monStadeCourant;
         private DateTime dateDeNaissance;
 
+        public Lepidoptere()
+        {
+            monStadeCourant = new Oeuf();
+            dateDeNaissance = DateTime.Now;
+
+        }
+
         public bool SeDeplacer()
         {
-            throw new System.NotImplementedException();
+            return monStadeCourant.SeDeplacer();
         }
 
         public void SeMetamorphoser()
         {
-            throw new System.NotImplementedException();
+            monStadeCourant=monStadeCourant.DonneTonProchainEtat();
         }
     }
 }

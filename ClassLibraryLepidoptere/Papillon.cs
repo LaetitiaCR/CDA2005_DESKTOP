@@ -7,5 +7,15 @@ namespace ClassLibraryLepidoptere
 {
     public class Papillon : StadeDEvolution
     {
+        public override StadeDEvolution DonneTonProchainEtat()
+        {
+            return this;
+        }
+
+        public override bool SeDeplacer()
+        {
+            Console.WriteLine("Je vole");
+            return true;
+        }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryZoo.Animaux
 {
-    public abstract class AnimalDuZoo:ISeDeplacer
+    public abstract class AnimalDuZoo:IDeplacable
     {
         private DateTime dateDeNaissance;
         bool estNeeAuZoo;

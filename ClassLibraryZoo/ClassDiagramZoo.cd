@@ -22,18 +22,25 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLibraryZoo.Animaux.AnimalDuZoo">
-    <Position X="2" Y="1.25" Width="4.25" />
+    <Position X="2" Y="0.75" Width="4.25" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAAgEAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Animaux\AnimalDuZoo.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="ClassLibraryZoo.Contrats.ISeDeplacer">
+  <Class Name="ClassLibraryZoo.Employes.Gardien">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Employes\Gardien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ClassLibraryZoo.Contrats.IDeplacable">
     <Position X="6.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Contrats\ISeDeplacer.cs</FileName>
+      <FileName>Contrats\IDeplacable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

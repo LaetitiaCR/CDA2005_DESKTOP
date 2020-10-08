@@ -7,12 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryZoo.Employes
 {
-    class Gardien : ISeDeplacer
+    class Gardien
     {
-        public bool SeDeplacer()
-        {
-            Console.WriteLine("Je marche");
-            return true;
-        }
     }
 }

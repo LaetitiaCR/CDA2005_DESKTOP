@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryZoo.Contrats
 {
-    public interface ISeDeplacer
+    public interface IDeplacable
     {
         bool SeDeplacer();
     }

@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryZoo", "ClassLib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTestZoo", "ConsoleAppTestZoo\ConsoleAppTestZoo.csproj", "{DA8170F4-3437-40E8-9022-E197AF88A636}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTestSortTableau", "ConsoleAppTestSortTableau\ConsoleAppTestSortTableau.csproj", "{6782AE38-1FC9-4B7F-BAD0-CE236B84672F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{DA8170F4-3437-40E8-9022-E197AF88A636}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA8170F4-3437-40E8-9022-E197AF88A636}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA8170F4-3437-40E8-9022-E197AF88A636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6782AE38-1FC9-4B7F-BAD0-CE236B84672F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6782AE38-1FC9-4B7F-BAD0-CE236B84672F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6782AE38-1FC9-4B7F-BAD0-CE236B84672F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6782AE38-1FC9-4B7F-BAD0-CE236B84672F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{4AAF6E04-0F55-45EC-AE4E-0C9407D0B9E1} = {2377E68D-ACCC-4608-A520-BE02C6A5113F}
 		{7CA99466-87E2-4637-92BD-C873F7E56A3A} = {61F61B31-1CC8-41D4-9E14-8F645DEB25FB}
 		{DA8170F4-3437-40E8-9022-E197AF88A636} = {61F61B31-1CC8-41D4-9E14-8F645DEB25FB}
+		{6782AE38-1FC9-4B7F-BAD0-CE236B84672F} = {61F61B31-1CC8-41D4-9E14-8F645DEB25FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A228A58-F34B-441D-9513-84933332334C}

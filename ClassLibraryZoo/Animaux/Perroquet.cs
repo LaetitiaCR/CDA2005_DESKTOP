@@ -14,7 +14,7 @@ namespace ClassLibraryZoo.Animaux
             throw new System.NotImplementedException();
         }
 
-        public bool SeDeplacer()
+        public override bool SeDeplacer()
         {
             Console.WriteLine("Je vole!");
             return true;

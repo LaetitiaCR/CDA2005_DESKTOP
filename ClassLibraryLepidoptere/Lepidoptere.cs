@@ -14,8 +14,24 @@ namespace ClassLibraryLepidoptere
         public Lepidoptere()
         {
             monStadeCourant = new Oeuf();
-            dateDeNaissance = DateTime.Now;
+            DateDeNaissance = DateTime.Now;
 
+        }
+
+        public DateTime DateDeNaissance 
+        { 
+            get => dateDeNaissance;
+            private set
+            {
+                if (value <= DateTime.Now) //regle metier
+                {
+                    dateDeNaissance = value;
+                }
+                else
+                {
+                    throw new FormatException("on est ds le future");
+                }
+            }
         }
 
         public bool SeDeplacer()

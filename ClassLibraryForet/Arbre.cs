@@ -14,21 +14,33 @@ namespace ClassLibraryForet
         public Arbre(int hauteur)
         {
             this.hauteur = hauteur;
-            // a finir
+            feuilles = new List<Feuille>();
+
         }
 
-        public Arbre(int hauteur, List<Feuille> feuilles) //ouvre porte aggregation
+        public Arbre(int hauteur, List<Feuille> _feuilles) //ouvre porte aggregation
         {
-            //a faire
+            this.hauteur = hauteur;
+            feuilles = _feuilles;
         }
 
          public void AddFeuille(Feuille f)
         {
-            //a faire
+            this.feuilles.Add(f);
         }
 
         public int Hauteur { get => hauteur; 
             //set => hauteur = value; 
+        }
+
+        public override string ToString()
+        {
+            String resu = base.ToString() + "hauteur=" + hauteur ;
+            foreach (Feuille f in feuilles)
+            {
+                resu = resu + "\n"+ f.ToString();
+            }
+            return resu;
         }
     }
 }

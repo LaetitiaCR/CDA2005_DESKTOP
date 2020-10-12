@@ -9,6 +9,6 @@ namespace ClassLibraryRealisationImpliciteExplicite
     public interface Interface1
     {
         void Method();
-        object Clone(),
+        object Clone();
     }
 }

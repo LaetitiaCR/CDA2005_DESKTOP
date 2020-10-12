@@ -10,11 +10,13 @@ namespace ClassLibraryLepidoptere
     {
         private StadeDEvolution monStadeCourant;
         private DateTime dateDeNaissance;
+        private EnumStadeDEvolution monStadeEnumCourant;
 
         public Lepidoptere()
         {
             monStadeCourant = new Oeuf();
             DateDeNaissance = DateTime.Now;
+            monStadeEnumCourant = EnumStadeDEvolution.Oeuf;
 
         }
 

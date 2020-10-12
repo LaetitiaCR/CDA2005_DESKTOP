@@ -10,6 +10,7 @@ namespace ClassLibraryForet
         ovale,
         lancéolée,
         cordineForme,
-        triangulaire
+        triangulaire,
+        crénelé
     }
 }

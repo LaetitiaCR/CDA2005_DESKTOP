@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,15 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryForet
 {
-    public class Arbre
+    public class Arbre: IList
     {
         int hauteur;
         private List<Feuille> feuilles;
+
+        public List<Feuille> Feuilles {
+            get => feuilles; 
+            //set => feuilles = value; 
+        }
 
         public Arbre(int hauteur)
         {
@@ -18,29 +24,43 @@ namespace ClassLibraryForet
 
         }
 
-        public Arbre(int hauteur, List<Feuille> _feuilles) //ouvre porte aggregation
+        //public Arbre(int hauteur, List<Feuille> _feuilles) //ouvre porte aggregation
+        //{
+        //    this.hauteur = hauteur;
+        //    feuilles = _feuilles;
+        //}
+
+         private void AddFeuille(Feuille f)
         {
-            this.hauteur = hauteur;
-            feuilles = _feuilles;
+            this.Feuilles.Add(f);
         }
 
-         public void AddFeuille(Feuille f)
+        public void AddFeuille(int _nbNervures, EnumCouleur _couleurFeuille, EnumFormeFeuille _formeFeuille)
         {
-            this.feuilles.Add(f);
+            this.AddFeuille(new Feuille( _nbNervures,  _couleurFeuille,  _formeFeuille));
         }
 
         public int Hauteur { get => hauteur; 
             //set => hauteur = value; 
         }
 
+
         public override string ToString()
         {
-            String resu = base.ToString() + "hauteur=" + hauteur ;
-            foreach (Feuille f in feuilles)
+            String resu = base.ToString() + " hauteur=" + hauteur ;
+            foreach (Feuille f in Feuilles)
             {
                 resu = resu + "\n"+ f.ToString();
             }
             return resu;
+        }
+
+        public void PasserEnAutomne()
+        {
+            foreach (Feuille f in Feuilles)
+            {
+                f.PrendsTesCouleursDAutomne();
+            }
         }
     }
 }

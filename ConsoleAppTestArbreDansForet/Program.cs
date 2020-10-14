@@ -31,13 +31,13 @@ namespace ConsoleAppTestArbreDansForet
 
             //tomber les feuilles de l'arbre //appeler chaque methode Tomber de l'arbre
 
-            //foreach (Feuille ff in chene1) //pattern Iterator
-            //{
-            //}
-
-            for (int i = 0; i < chene1.Count; i++) //Count -> Propriete
+            foreach (Feuille ff in chene1) 
             {
-                Feuille f2 = ((IList < Feuille >)chene1)[i]; // voir cours -> Définir un indexeur pour une classe de scharp2008
+            }
+
+            for (int i = 0; i < chene1.Count; i++) 
+            {
+                Feuille f2 = chene1[i]; 
 
 
             }

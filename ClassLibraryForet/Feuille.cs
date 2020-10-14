@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryForet
 {
-    public class Feuille
+    public class Feuille : ElementDeLArbre
     {
         int nbNervures;
         EnumCouleur couleurFeuille;
         EnumFormeFeuille formeFeuille;
 
-        public Feuille(int _nbNervures,EnumFormeFeuille _formeFeuille):this(_nbNervures,EnumCouleur.Vert,_formeFeuille)
+        public Feuille(int _nbNervures, EnumFormeFeuille _formeFeuille) : this(_nbNervures, EnumCouleur.Vert, _formeFeuille)
         {
 
         }
@@ -24,7 +24,9 @@ namespace ClassLibraryForet
         }
 
 
-        public int NbNervures { get => nbNervures; 
+        public int NbNervures
+        {
+            get => nbNervures;
             //set => nbNervures = value; 
         }
 
@@ -47,7 +49,7 @@ namespace ClassLibraryForet
 
         public override string ToString()
         {
-            return base.ToString() + " nbNervures="+nbNervures+ " couleurFeuille=" + couleurFeuille + " formeFeuille=" + formeFeuille;
+            return base.ToString() + " nbNervures=" + nbNervures + " couleurFeuille=" + couleurFeuille + " formeFeuille=" + formeFeuille;
         }
     }
 }

@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arbre.cs" />
+    <Compile Include="ElementDeLArbre.cs" />
     <Compile Include="EnumCouleur.cs" />
     <Compile Include="EnumFormeFeuille.cs" />
     <Compile Include="Feuille.cs" />
+    <Compile Include="Fruit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

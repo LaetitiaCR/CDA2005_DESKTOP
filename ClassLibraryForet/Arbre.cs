@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibraryForet
 {
-    public class Arbre: IList
+
+    public class Arbre: IList<Feuille>
     {
         int hauteur;
         private List<Feuille> feuilles;
@@ -44,6 +46,22 @@ namespace ClassLibraryForet
             //set => hauteur = value; 
         }
 
+        public int Count { get => feuilles.Count;}
+
+        public bool IsReadOnly => throw new NotImplementedException();
+
+        Feuille IList<Feuille>.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        //redefinir l'operateur [] sur la classe Arbre
+        public Feuille this[int index]
+        {
+            get { return feuilles[index]; }
+            // set { feuilles[index] = value; }
+        }
+
+        
+
+
 
         public override string ToString()
         {
@@ -57,10 +75,60 @@ namespace ClassLibraryForet
 
         public void PasserEnAutomne()
         {
-            foreach (Feuille f in Feuilles)
+            foreach (Feuille f in feuilles)
             {
                 f.PrendsTesCouleursDAutomne();
             }
+        }
+
+        public int IndexOf(Feuille item)
+        {
+            return feuilles.IndexOf(item);
+        }
+
+        public void Insert(int index, Feuille item)
+        {
+            feuilles.Insert(index, item);
+        }
+
+        public void RemoveAt(int index)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(Feuille item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Clear()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Contains(Feuille item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CopyTo(Feuille[] array, int arrayIndex)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Remove(Feuille item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerator<Feuille> GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
         }
     }
 }

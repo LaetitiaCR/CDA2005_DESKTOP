@@ -46,13 +46,15 @@ namespace ClassLibraryForet
             //set => hauteur = value; 
         }
 
+        //redefinition de facon Propprietaire ou IList
         public int Count { get => feuilles.Count;}
 
         public bool IsReadOnly => throw new NotImplementedException();
 
+        //redefinir l'operateur [] sur la classe Arbre pour IList<Feuille>
         Feuille IList<Feuille>.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        //redefinir l'operateur [] sur la classe Arbre
+        //redefinir l'operateur [] sur la classe Arbre de facon proprietaire
         public Feuille this[int index]
         {
             get { return feuilles[index]; }
@@ -86,6 +88,7 @@ namespace ClassLibraryForet
             return feuilles.IndexOf(item);
         }
 
+        //solution IList--Je redelegue a mon composite feuilles
         public void Insert(int index, Feuille item)
         {
             feuilles.Insert(index, item);

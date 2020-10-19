@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrarySimpleList", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppSimpleList", "ConsoleAppSimpleList\ConsoleAppSimpleList.csproj", "{396412D4-F1A8-408B-8652-1C3FBB6024DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CultureDuPC", "CultureDuPC", "{A6BCFB80-F677-464C-BF52-5B41FADAAC4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppCulture", "ConsoleAppCulture\ConsoleAppCulture.csproj", "{3E35ECFB-72FD-453C-AF0D-8BBB8555853A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +105,10 @@ Global
 		{396412D4-F1A8-408B-8652-1C3FBB6024DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{396412D4-F1A8-408B-8652-1C3FBB6024DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{396412D4-F1A8-408B-8652-1C3FBB6024DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E35ECFB-72FD-453C-AF0D-8BBB8555853A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E35ECFB-72FD-453C-AF0D-8BBB8555853A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E35ECFB-72FD-453C-AF0D-8BBB8555853A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E35ECFB-72FD-453C-AF0D-8BBB8555853A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +127,7 @@ Global
 		{CBDF79E1-3FE9-4A82-BB8F-14940A481AF9} = {E5CE469B-12DC-4409-BE92-9396E2718BC4}
 		{F0239D78-E2A7-49E8-B76E-D84AF43A7ECE} = {E5CE469B-12DC-4409-BE92-9396E2718BC4}
 		{396412D4-F1A8-408B-8652-1C3FBB6024DF} = {E5CE469B-12DC-4409-BE92-9396E2718BC4}
+		{3E35ECFB-72FD-453C-AF0D-8BBB8555853A} = {A6BCFB80-F677-464C-BF52-5B41FADAAC4F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A228A58-F34B-441D-9513-84933332334C}

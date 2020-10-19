@@ -15,6 +15,7 @@ namespace ConsoleAppCulture
             //Imposer une autre culture
             //CultureInfo.CurrentCulture = new CultureInfo("en-EN");
             
+            //-------------------parsage d'un double--------------------------
             try
             {
                 Double ledouble = Double.Parse("12.5");
@@ -30,8 +31,9 @@ namespace ConsoleAppCulture
 
             double d2=12;
             bool ok = Double.TryParse("12,5",out d2);
-            
 
+
+            //-------------------parsage d'un datetime--------------------------
             DateTime dateARecupere;
 
             try

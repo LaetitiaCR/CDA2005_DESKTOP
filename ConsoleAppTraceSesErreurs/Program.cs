@@ -23,7 +23,7 @@ namespace ConsoleAppTraceSesErreurs
             }
             catch (Exception e)
             {
-                Trace.WriteLine(e.Message);
+                Trace.TraceError(e.Message);
             }
         }
     }
